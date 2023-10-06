@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description:print all alphabet letters
+ * Description: print all alphabet letters
  *
  * Return: always 0 (success)
 */
@@ -11,7 +11,7 @@
 int main(void)
 {
 	char ch = 'a';
-	char ch = 'A';
+	char CH = 'A';
 
 	while (ch <= 'z')
 	{
