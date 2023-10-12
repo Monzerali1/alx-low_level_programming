@@ -3,8 +3,8 @@
 /**
  * mul - multiplies to integrs
  *
- * @c: fiest input
- * @c: second input
+ * @a: first int
+ * @b: second int
  *
  * Return: return results
 */
