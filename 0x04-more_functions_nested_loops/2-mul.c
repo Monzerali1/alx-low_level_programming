@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 
 /**
  * mul - multiplies to integrs
@@ -9,7 +9,7 @@
  * Return: return results
 */
 
-int mul(int c, int c)
+int mul(int a, int b)
 {
 	return (a * b);
 }
