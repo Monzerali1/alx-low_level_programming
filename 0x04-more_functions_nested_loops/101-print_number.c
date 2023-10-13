@@ -1,25 +1,37 @@
 #include "main.h"
 
 /**
- * print_number - print an integr
+ * print_triangle - entry point
  *
- * @n: input integr parameter
+ * Discription: i prints diagonals
  *
- * Return: always 0
+ * @size: size of the triangel
+ *
+ * Return: void
 */
 
-void print_number(int n)
+void print_triangle(int size)
 {
-	unsigned int i = n;
+	int row, hashes, spaces;
 
-	if (n < 0)
+	if (size <= 0)
 	{
-		_putchar(45);
-		i = -i;
+		_putchar('\n');
 	}
-	if (i / 10)
+	else
 	{
-		print_number(i / 10);
+		for (row = 1; row <= size; row++)
+		{
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				_putchar(' ');
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
+				_putchar('#');
+
+			}
+			_putchar('\n');
+		}
 	}
-	_putchar(i % 10 + '0');
 }
