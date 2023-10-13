@@ -1,37 +1,25 @@
 #include "main.h"
 
 /**
- * print_triangle - entry point
+ * print_number - prints an integer
  *
- * Discription: i prints diagonals
+ * @n: input integer parameter
  *
- * @size: size of the triangel
- *
- * Return: void
+ * Return: always 0
 */
 
-void print_triangle(int size)
+void print_number(int n)
 {
-	int row, hashes, spaces;
+	unsigned int i = n;
 
-	if (size <= 0)
+	if (n < 0)
 	{
-		_putchar('\n');
+		_putchar(45);
+		i = -i;
 	}
-	else
+	if (i / 10)
 	{
-		for (row = 1; row <= size; row++)
-		{
-			for (spaces = size - row; spaces >= 1; spaces--)
-			{
-				_putchar(' ');
-			}
-			for (hashes = 1; hashes <= row; hashes++)
-			{
-				_putchar('#');
-
-			}
-			_putchar('\n');
-		}
+		print_number(i / 10);
 	}
+	_putchar(i % 10 + '0');
 }
