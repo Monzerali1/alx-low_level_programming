@@ -59,6 +59,5 @@ char *cap_string(char *s)
 			foundDelimit = 0;
 		s++;
 	}
-	return (btr);
+	return (ptr);
 }
-
