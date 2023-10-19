@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 
 /**
  * isPrintableASCII - determines if n is a printable ASCII char
@@ -26,7 +26,7 @@ void printHexes(char *b, int start, int end)
 	while (i < 10)
 	{
 		if (i < end)
-			printf("02x", *(b + start + i));
+			printf("%02x", *(b + start + i));
 		else
 			printf(" ");
 		if (i % 2)
@@ -74,7 +74,7 @@ void print_buffer(char *b, int size)
 			end = (size - start < 10) ? size - start : 10;
 			printf("%08x: ", start);
 			printHexes(b, start, end);
-			peintASCII(b, start, end);
+			printASCII(b, start, end);
 			printf("\n");
 		}
 	} else
