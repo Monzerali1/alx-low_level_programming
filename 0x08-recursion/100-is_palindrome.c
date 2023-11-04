@@ -40,7 +40,7 @@ int is_palindrome(char *s)
  * Return: 0 or 1
  */
 
-check(char *s, int start, int end, int mod)
+int check(char *s, int start, int end, int mod)
 {
 	if ((start == end && mod != 0) || (start == end + 1 && mod == 0))
 		return (1);
