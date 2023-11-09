@@ -57,14 +57,14 @@ void format_string(char *separator, va_list ap)
 void print_all(const char * const format, ...)
 {
 	int i = 0, j;
-        char *separator = "";
-        va_list ap;
-        token_t tokens[] = {
-                {"c", format_char},
-                {"i", format_int},
-                {"f", format_float},
-                {"s", format_string},
-                {NULL, NULL}
+	char *separator = "";
+	va_list ap;
+	token_t tokens[] = {
+		{"c", format_char},
+		{"i", format_int},
+		{"f", format_float},
+		{"s", format_string},
+		{NULL, NULL}
 	};
 
 	va_start(ap, format);
